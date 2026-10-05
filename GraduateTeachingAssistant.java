@@ -1,5 +1,3 @@
-// fixed formatting
-
 public class GraduateTeachingAssistant extends TeachingAssistant {
   private String degreeProgram;
 
@@ -13,6 +11,7 @@ public class GraduateTeachingAssistant extends TeachingAssistant {
     this.degreeProgram = degreeProgram.trim();
   }
 
+  // getters
   @Override
   public String getRole() {
     return "Graduate Teaching Assistant";

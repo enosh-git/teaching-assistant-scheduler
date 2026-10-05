@@ -1,5 +1,3 @@
-// fixed formatting
-
 public class Person {
   private String name;
   private String id;
@@ -9,6 +7,7 @@ public class Person {
     setId(id);
   }
 
+  // getters
   public String getName() {
     return name;
   }
@@ -17,6 +16,7 @@ public class Person {
     return id;
   }
 
+  // setters
   public void setName(String name) {
     if (name == null || name.trim().isEmpty()) {
       throw new IllegalArgumentException("Name is required.");
@@ -33,6 +33,8 @@ public class Person {
     this.id = id.trim();
   }
 
+
+  // additional methods
   public String getDescription() {
     return name + " (" + id + ")";
   }

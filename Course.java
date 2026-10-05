@@ -1,5 +1,3 @@
-// fixed formatting
-
 public class Course {
   private String courseCode;
   private String courseName;
@@ -23,6 +21,7 @@ public class Course {
     return value == null || value.trim().isEmpty();
   }
 
+  // getters
   public String getCourseCode() {
     return courseCode;
   }
@@ -43,6 +42,7 @@ public class Course {
     return requiredTAs;
   }
 
+  // other method
   @Override
   public String toString() {
       return courseCode + " - " + courseName + " | Expertise: " + requiredExpertise + " | " + schedule + " | TAs required: " + requiredTAs;

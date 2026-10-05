@@ -1,5 +1,3 @@
-// fixed formatting
-
 public class TeachingAssistant extends Person {
   private String expertise;
   private Schedule availability;
@@ -21,6 +19,7 @@ public class TeachingAssistant extends Person {
     this.assignedCourses = 0;
   }
 
+  // methods
   public void addExpertise(String skill) {
     if (skill == null || skill.trim().isEmpty()) {
       throw new IllegalArgumentException("Expertise is required.");
@@ -49,6 +48,8 @@ public class TeachingAssistant extends Person {
     assignedCourses++;
   }
 
+
+  // getters
   public int getAssignedCourses() {
     return assignedCourses;
   }

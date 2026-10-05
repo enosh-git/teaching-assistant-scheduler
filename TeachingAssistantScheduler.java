@@ -1,5 +1,3 @@
-// fixed formatting
-
 public class TeachingAssistantScheduler {
   private TeachingAssistant[] assistants;
   private Course[] courses;
@@ -23,6 +21,7 @@ public class TeachingAssistantScheduler {
     assignmentCount = 0;
   }
 
+  // methods
   public void addAssistant(TeachingAssistant ta) {
     if (ta == null || assistantCount == assistants.length) {
       throw new IllegalStateException("Cannot add teaching assistant.");

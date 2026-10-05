@@ -1,5 +1,3 @@
-// fixed formatting
-
 public class Schedule {
   private String day;
   private int startTime;
@@ -17,6 +15,7 @@ public class Schedule {
     this.endTime = endTime;
   }
 
+  // methods
   public boolean overlaps(Schedule other) {
     if (other == null) {
       return false;
@@ -33,10 +32,12 @@ public class Schedule {
     return day.equalsIgnoreCase(other.day) && startTime <= other.startTime && endTime >= other.endTime;
   }
 
+  // getter
   public int getDuration() {
     return endTime - startTime;
   }
 
+  // additional methods
   private String formatTime(int hour) {
     if (hour == 24) {
       return "24:00";

@@ -1,5 +1,3 @@
-// fixed formatting
-
 public class UndergraduateTeachingAssistant extends TeachingAssistant {
   private int yearLevel;
 
@@ -13,6 +11,7 @@ public class UndergraduateTeachingAssistant extends TeachingAssistant {
     this.yearLevel = yearLevel;
   }
 
+  // getters
   @Override
   public String getRole() {
     return "Undergraduate Teaching Assistant";
